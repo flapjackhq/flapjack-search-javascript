@@ -7,7 +7,7 @@ import type { SupportedLanguage } from './supportedLanguage';
 /**
 * Dictionary entry.
 */
-export type DictionaryEntry = Record<String, any> &  {
+export type DictionaryEntry = Record<string, any> &  {
 
     /**
     * Unique identifier for the dictionary entry.

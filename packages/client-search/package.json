@@ -51,8 +51,8 @@
   "dependencies": {
     "@flapjack-search/client-common": "0.0.1-alpha.0",
     "@flapjack-search/requester-browser-xhr": "0.0.1-alpha.0",
-    "@flapjack-search/requester-node-http": "0.0.1-alpha.0",
-    "@flapjack-search/requester-fetch": "0.0.1-alpha.0"
+    "@flapjack-search/requester-fetch": "0.0.1-alpha.0",
+    "@flapjack-search/requester-node-http": "0.0.1-alpha.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",

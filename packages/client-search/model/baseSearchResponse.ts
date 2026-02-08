@@ -6,7 +6,7 @@ import type { Redirect } from './redirect';
 import type { RenderingContent } from './renderingContent';
 
 
-export type BaseSearchResponse = Record<String, any> &  {
+export type BaseSearchResponse = Record<string, any> &  {
 
     /**
     * A/B test ID. This is only included in the response for indices that are part of an A/B test.

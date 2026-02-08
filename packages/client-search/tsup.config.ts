@@ -59,8 +59,8 @@ const browserConfigs: Options[] = [
     minify: true,
     name: `browser ${pkg.name} min esm`,
     entry: {'builds/browser.min': 'builds/browser.ts'},
-    external: [],
-    noExternal: getDependencies(pkg, 'xhr'),
+    external: ['@flapjack-search/requester-node-http', '@flapjack-search/requester-fetch', 'node:crypto', 'http', 'https'],
+    noExternal: ['@flapjack-search/client-common', '@flapjack-search/requester-browser-xhr'],
   },
 ];
 

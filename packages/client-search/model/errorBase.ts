@@ -4,7 +4,7 @@
 /**
 * Error.
 */
-export type ErrorBase = Record<String, any> &  {
+export type ErrorBase = Record<string, any> &  {
 
     message?:       string
     | undefined

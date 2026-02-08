@@ -3,7 +3,7 @@
 import type { SynonymHit } from './synonymHit';
 
 
-export type SearchSynonymsResponse = Record<String, any> &  {
+export type SearchSynonymsResponse = Record<string, any> &  {
 
     /**
     * Matching synonyms.
