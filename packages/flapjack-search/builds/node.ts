@@ -11,6 +11,7 @@ export * from './models';
 
 export type FlapjackSearch = SearchClient & {
   get _ua(): string;
+  addAlgoliaAgent(segment: string, version?: string): void;
 };
 
 export function flapjackSearch(
@@ -24,6 +25,9 @@ export function flapjackSearch(
     ...client,
     get _ua(): string {
       return client.transporter.flapjackAgent.value;
+    },
+    addAlgoliaAgent(segment: string, version?: string): void {
+      client.addFlapjackAgent(segment, version);
     },
   };
 }
