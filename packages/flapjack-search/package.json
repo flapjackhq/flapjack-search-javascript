@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-beta.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flapjackhq/flapjack-search-javascript.git"
@@ -51,14 +51,14 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "@flapjack-search/client-search": "0.0.1-alpha.0",
-    "@flapjack-search/requester-browser-xhr": "0.0.1-alpha.0",
-    "@flapjack-search/requester-fetch": "0.0.1-alpha.0",
-    "@flapjack-search/requester-node-http": "0.0.1-alpha.0"
+    "@flapjack-search/client-search": "^0.1.0-beta.1",
+    "@flapjack-search/requester-browser-xhr": "^0.1.0-beta.1",
+    "@flapjack-search/requester-fetch": "^0.1.0-beta.1",
+    "@flapjack-search/requester-node-http": "^0.1.0-beta.1"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
-    "@flapjack-search/requester-testing": "0.0.1-alpha.0",
+    "@flapjack-search/requester-testing": "^0.1.0-beta.1",
     "@types/node": "25.1.0",
     "publint": "0.3.17",
     "tsup": "8.5.1",

@@ -1,6 +1,6 @@
 {
   "name": "@flapjack-search/logger-console",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-beta.1",
   "description": "Promise-based log library using console log.",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "vitest": "4.0.18"
   },
   "dependencies": {
-    "@flapjack-search/client-common": "0.0.1-alpha.0"
+    "@flapjack-search/client-common": "^0.1.0-beta.1"
   },
   "engines": {
     "node": ">= 14.0.0"

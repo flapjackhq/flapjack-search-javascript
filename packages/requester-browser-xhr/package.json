@@ -1,6 +1,6 @@
 {
   "name": "@flapjack-search/requester-browser-xhr",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-beta.1",
   "description": "Promise-based request library for browser using xhr.",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "test:bundle": "publint . && attw --pack . --ignore-rules cjs-resolves-to-esm"
   },
   "dependencies": {
-    "@flapjack-search/client-common": "0.0.1-alpha.0"
+    "@flapjack-search/client-common": "^0.1.0-beta.1"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",

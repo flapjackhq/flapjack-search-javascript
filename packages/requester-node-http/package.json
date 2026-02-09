@@ -1,6 +1,6 @@
 {
   "name": "@flapjack-search/requester-node-http",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-beta.1",
   "description": "Promise-based request library for node using the native http module.",
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
     "test:bundle": "publint . && attw --pack ."
   },
   "dependencies": {
-    "@flapjack-search/client-common": "0.0.1-alpha.0"
+    "@flapjack-search/client-common": "^0.1.0-beta.1"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
