@@ -4,7 +4,6 @@ export type SearchClient = ReturnType<typeof createSearchClient> & SearchClientN
 
 import { createHmac } from 'node:crypto';
 
-import { createXhrRequester } from '@flapjack-search/requester-browser-xhr';
 import { createHttpRequester } from '@flapjack-search/requester-node-http';
 import { createFetchRequester } from '@flapjack-search/requester-fetch';
 import {

@@ -7,8 +7,6 @@ export type SearchClientWorkerHelpers = {
 
 export type SearchClient = ReturnType<typeof createSearchClient> & SearchClientWorkerHelpers;
 
-import { createXhrRequester } from '@flapjack-search/requester-browser-xhr';
-import { createHttpRequester } from '@flapjack-search/requester-node-http';
 import { createFetchRequester } from '@flapjack-search/requester-fetch';
 import {
   IndexNotFoundError,
