@@ -6,9 +6,9 @@
   <h4 align="center">The perfect starting point to integrate <a href="https://flapjack.com" target="_blank">Flapjack</a> within your JavaScript project</h4>
 
   <p align="center">
-    <a href="https://npmjs.com/package/@algolia/client-search"><img src="https://img.shields.io/npm/v/@algolia/client-search.svg?style=flat-square" alt="NPM version"></img></a>
-    <a href="http://npm-stat.com/charts.html?package=@algolia/client-search"><img src="https://img.shields.io/npm/dm/@algolia/client-search.svg?style=flat-square" alt="NPM downloads"></a>
-    <a href="https://www.jsdelivr.com/package/npm/@algolia/client-search"><img src="https://data.jsdelivr.com/v1/package/npm/@algolia/client-search/badge" alt="jsDelivr Downloads"></img></a>
+    <a href="https://npmjs.com/package/@flapjack-search/client-search"><img src="https://img.shields.io/npm/v/@flapjack-search/client-search.svg?style=flat-square" alt="NPM version"></img></a>
+    <a href="http://npm-stat.com/charts.html?package=@flapjack-search/client-search"><img src="https://img.shields.io/npm/dm/@flapjack-search/client-search.svg?style=flat-square" alt="NPM downloads"></a>
+    <a href="https://www.jsdelivr.com/package/npm/@flapjack-search/client-search"><img src="https://data.jsdelivr.com/v1/package/npm/@flapjack-search/client-search/badge" alt="jsDelivr Downloads"></img></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License"></a>
   </p>
 </p>
@@ -32,20 +32,20 @@
 ## 💡 Getting Started
 
 > [!TIP]
-> This API client is already a dependency of [the flapjack-search client](https://www.npmjs.com/package/flapjack-search), you don't need to manually install `@algolia/client-search` if you already have `flapjack-search` installed.
+> This API client is already a dependency of [the flapjack-search client](https://www.npmjs.com/package/flapjack-search), you don't need to manually install `@flapjack-search/client-search` if you already have `flapjack-search` installed.
 
-To get started, you first need to install @algolia/client-search (or any other available API client package).
+To get started, you first need to install @flapjack-search/client-search (or any other available API client package).
 All of our clients comes with type definition, and are available for both browser and node environments.
 
 ### With a package manager
 
 
 ```bash
-yarn add @algolia/client-search@0.0.1-alpha.0
+yarn add @flapjack-search/client-search@beta
 # or
-npm install @algolia/client-search@0.0.1-alpha.0
+npm install @flapjack-search/client-search@beta
 # or
-pnpm add @algolia/client-search@0.0.1-alpha.0
+pnpm add @flapjack-search/client-search@beta
 ```
 
 ### Without a package manager
@@ -53,7 +53,7 @@ pnpm add @algolia/client-search@0.0.1-alpha.0
 Add the following JavaScript snippet to the <head> of your website:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@algolia/client-search@0.0.1-alpha.0/dist/builds/browser.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@flapjack-search/client-search/dist/builds/browser.umd.js"></script>
 ```
 
 ### Usage
@@ -61,7 +61,7 @@ Add the following JavaScript snippet to the <head> of your website:
 You can now import the Flapjack API client in your project and play with it.
 
 ```js
-import { searchClient } from '@algolia/client-search';
+import { searchClient } from '@flapjack-search/client-search';
 
 const client = searchClient('YOUR_APP_ID', 'YOUR_API_KEY');
 ```

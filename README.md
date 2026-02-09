@@ -37,11 +37,11 @@ All of our clients comes with type definition, and are available for both browse
 ### With a package manager
 
 ```bash
-yarn add flapjack-search@0.0.1-alpha.0
+yarn add flapjack-search@beta
 # or
-npm install flapjack-search@0.0.1-alpha.0
+npm install flapjack-search@beta
 # or
-pnpm add flapjack-search@0.0.1-alpha.0
+pnpm add flapjack-search@beta
 ```
 
 ### Without a package manager
@@ -49,11 +49,7 @@ pnpm add flapjack-search@0.0.1-alpha.0
 Add the following JavaScript snippet to the <head> of your website:
 
 ```html
-// for the full client
-<script src="https://cdn.jsdelivr.net/npm/flapjack-search@0.0.1-alpha.0/dist/flapjack-search.umd.js"></script>
-
-// for the lite client
-<script src="https://cdn.jsdelivr.net/npm/flapjack-search@0.0.1-alpha.0/dist/lite/builds/browser.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flapjack-search@beta/dist/flapjack-search.umd.js"></script>
 ```
 
 ### Usage
@@ -64,18 +60,47 @@ You can now import the Flapjack API client in your project and play with it.
 import { flapjackSearch } from 'flapjack-search';
 
 const client = flapjackSearch('YOUR_APP_ID', 'YOUR_API_KEY');
-
-// or with the lite client
-import { liteClient } from 'flapjack-search/lite';
-
-const client = liteClient('YOUR_APP_ID', 'YOUR_API_KEY');
 ```
 
-For full documentation, visit the **[Flapjack JavaScript API Client](https://www.flapjack.com/doc/libraries/sdk/methods/search/)**.
+### Self-hosted server
+
+```js
+const client = flapjackSearch('my-app', 'my-api-key', {
+  hosts: [{ url: 'search.example.com', protocol: 'https', accept: 'readWrite' }],
+});
+```
+
+### Drop-in InstantSearch compatibility
+
+Flapjack Search works with the entire Algolia InstantSearch ecosystem — no widget changes needed:
+
+```js
+import { flapjackSearch } from 'flapjack-search';
+import instantsearch from 'instantsearch.js';
+import { searchBox, hits } from 'instantsearch.js/es/widgets';
+
+const search = instantsearch({
+  searchClient: flapjackSearch('APP_ID', 'API_KEY'),
+  indexName: 'products',
+});
+search.addWidgets([searchBox({ container: '#search' }), hits({ container: '#hits' })]);
+search.start();
+```
+
+Works with React InstantSearch, Vue InstantSearch, and Autocomplete.js too. See the [migration guide](https://github.com/flapjackhq/flapjack-search-javascript/blob/main/MIGRATION.md) for details.
+
+### Migrating from Algolia?
+
+Switching takes about 5 minutes:
+
+1. `npm uninstall algoliasearch && npm install flapjack-search@beta`
+2. Replace `import algoliasearch from 'algoliasearch'` with `import { flapjackSearch } from 'flapjack-search'`
+3. Replace `algoliasearch(` with `flapjackSearch(`
+4. Done — all methods, types, and widgets work identically.
 
 ## ❓ Troubleshooting
 
-Encountering an issue? Before reaching out to support, we recommend heading to our [FAQ](https://support.flapjack.com/hc/en-us/sections/15061037630609-API-Client-FAQs) where you will find answers for the most common issues and gotchas with the client. You can also open [a GitHub issue](https://github.com/flapjackhq/flapjack-search-automation/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
+Encountering an issue? [Open a GitHub issue](https://github.com/flapjackhq/flapjack-search-javascript/issues/new) and we'll help.
 
 ## 📄 License
 
