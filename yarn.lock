@@ -401,7 +401,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flapjack-search/client-common@npm:0.0.1-alpha.0, @flapjack-search/client-common@workspace:packages/client-common":
+"@flapjack-search/client-common@npm:^0.1.0-beta.1, @flapjack-search/client-common@workspace:packages/client-common":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/client-common@workspace:packages/client-common"
   dependencies:
@@ -416,15 +416,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flapjack-search/client-search@npm:0.0.1-alpha.0, @flapjack-search/client-search@workspace:packages/client-search":
+"@flapjack-search/client-search@npm:^0.1.0-beta.1, @flapjack-search/client-search@workspace:packages/client-search":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/client-search@workspace:packages/client-search"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-browser-xhr": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-fetch": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-node-http": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-browser-xhr": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-fetch": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-node-http": "npm:^0.1.0-beta.1"
     "@types/node": "npm:25.1.0"
     publint: "npm:0.3.17"
     rollup: "npm:4.57.1"
@@ -438,7 +438,7 @@ __metadata:
   resolution: "@flapjack-search/logger-console@workspace:packages/logger-console"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
     "@types/node": "npm:24.10.9"
     jsdom: "npm:27.4.0"
     publint: "npm:0.3.17"
@@ -449,12 +449,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flapjack-search/requester-browser-xhr@npm:0.0.1-alpha.0, @flapjack-search/requester-browser-xhr@workspace:packages/requester-browser-xhr":
+"@flapjack-search/requester-browser-xhr@npm:^0.1.0-beta.1, @flapjack-search/requester-browser-xhr@workspace:packages/requester-browser-xhr":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/requester-browser-xhr@workspace:packages/requester-browser-xhr"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
     "@types/node": "npm:24.10.9"
     jsdom: "npm:27.4.0"
     publint: "npm:0.3.17"
@@ -465,12 +465,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flapjack-search/requester-fetch@npm:0.0.1-alpha.0, @flapjack-search/requester-fetch@workspace:packages/requester-fetch":
+"@flapjack-search/requester-fetch@npm:^0.1.0-beta.1, @flapjack-search/requester-fetch@workspace:packages/requester-fetch":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/requester-fetch@workspace:packages/requester-fetch"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
     "@types/node": "npm:24.10.9"
     cross-fetch: "npm:4.1.0"
     nock: "npm:14.0.10"
@@ -481,12 +481,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flapjack-search/requester-node-http@npm:0.0.1-alpha.0, @flapjack-search/requester-node-http@workspace:packages/requester-node-http":
+"@flapjack-search/requester-node-http@npm:^0.1.0-beta.1, @flapjack-search/requester-node-http@workspace:packages/requester-node-http":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/requester-node-http@workspace:packages/requester-node-http"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
     "@types/node": "npm:24.10.9"
     nock: "npm:14.0.10"
     publint: "npm:0.3.17"
@@ -496,12 +496,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flapjack-search/requester-testing@npm:0.0.1-alpha.0, @flapjack-search/requester-testing@workspace:packages/requester-testing":
+"@flapjack-search/requester-testing@npm:^0.1.0-beta.1, @flapjack-search/requester-testing@workspace:packages/requester-testing":
   version: 0.0.0-use.local
   resolution: "@flapjack-search/requester-testing@workspace:packages/requester-testing"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-common": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-common": "npm:^0.1.0-beta.1"
     "@types/node": "npm:24.10.9"
     publint: "npm:0.3.17"
     tsup: "npm:8.5.1"
@@ -3787,11 +3787,11 @@ __metadata:
   resolution: "flapjack-search@workspace:packages/flapjack-search"
   dependencies:
     "@arethetypeswrong/cli": "npm:0.18.2"
-    "@flapjack-search/client-search": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-browser-xhr": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-fetch": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-node-http": "npm:0.0.1-alpha.0"
-    "@flapjack-search/requester-testing": "npm:0.0.1-alpha.0"
+    "@flapjack-search/client-search": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-browser-xhr": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-fetch": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-node-http": "npm:^0.1.0-beta.1"
+    "@flapjack-search/requester-testing": "npm:^0.1.0-beta.1"
     "@types/node": "npm:25.1.0"
     publint: "npm:0.3.17"
     tsup: "npm:8.5.1"
