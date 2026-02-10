@@ -165,7 +165,8 @@ describe('timeout handling', () => {
   afterAll(
     () =>
       new Promise<void>((done) => {
-        done();
+        server.closeAllConnections();
+        server.close(() => done());
       }),
   );
 
